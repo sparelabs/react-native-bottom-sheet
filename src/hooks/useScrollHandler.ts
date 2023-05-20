@@ -4,16 +4,27 @@ import {
   useAnimatedScrollHandler,
   useSharedValue,
 } from 'react-native-reanimated';
+import type { SharedValue } from 'react-native-reanimated';
 import { useScrollEventsHandlersDefault } from './useScrollEventsHandlersDefault';
 import { workletNoop as noop } from '../utilities';
 import type { Scrollable, ScrollableEvent } from '../types';
+import { NativeSyntheticEvent, NativeScrollEvent } from 'react-native';
+import { RefObject } from 'react';
+
+type OnScroll = (event: NativeSyntheticEvent<NativeScrollEvent>) => void;
+
+interface ScrollHandlerReturn {
+  scrollHandler: OnScroll;
+  scrollableRef: RefObject<any>;
+  scrollableContentOffsetY: SharedValue<number>;
+}
 
 export const useScrollHandler = (
   useScrollEventsHandlers = useScrollEventsHandlersDefault,
   onScroll?: ScrollableEvent,
   onScrollBeginDrag?: ScrollableEvent,
   onScrollEndDrag?: ScrollableEvent
-) => {
+): ScrollHandlerReturn => {
   // refs
   const scrollableRef = useAnimatedRef<Scrollable>();
 
