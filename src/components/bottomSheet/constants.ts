@@ -39,7 +39,8 @@ const DEFAULT_ACCESSIBILITY_ROLE = 'adjustable';
 const DEFAULT_ENABLE_ACCESSIBILITY_CHANGE_ANNOUNCEMENT = true;
 const DEFAULT_ACCESSIBILITY_POSITION_CHANGE_ANNOUNCEMENT = (
   positionInScreen: string
-) => `Bottom sheet snapped to ${positionInScreen}% of the screen`;
+) =>
+  `${DEFAULT_ACCESSIBILITY_LABEL} snapped to ${positionInScreen}% of the screen`;
 
 export {
   DEFAULT_HANDLE_HEIGHT,

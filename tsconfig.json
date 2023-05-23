@@ -2,9 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@gorhom/bottom-sheet": ["./src/index"],
-      "react": [ "./node_modules/@types/react" ],
-      "react-native": ["./node_modules/@types/react-native"]
+      "@sparelabs/bottom-sheet": ["./src/index"],
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
