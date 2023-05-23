@@ -24,6 +24,9 @@
     "type": "git",
     "url": "git+https://github.com/sparelabs/react-native-bottom-sheet.git"
   },
+  "publishConfig": {
+    "@sparelabs:registry": "https://npm.pkg.github.com"
+  },
   "author": "Mo Gorhom (https://gorhom.dev)",
   "license": "MIT",
   "bugs": {
