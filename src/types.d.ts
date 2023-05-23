@@ -165,8 +165,8 @@ export type ScrollEventsHandlersHookType = (
 };
 //#endregion
 export interface NullableAccessibilityProps extends AccessibilityProps {
-  accessible?: AccessibilityProps['accessible'] | null;
-  accessibilityLabel?: AccessibilityProps['accessibilityLabel'] | null;
-  accessibilityHint?: AccessibilityProps['accessibilityHint'] | null;
-  accessibilityRole?: AccessibilityProps['accessibilityRole'] | null;
+  accessible?: AccessibilityProps['accessible'];
+  accessibilityLabel?: AccessibilityProps['accessibilityLabel'];
+  accessibilityHint?: AccessibilityProps['accessibilityHint'];
+  accessibilityRole?: AccessibilityProps['accessibilityRole'];
 }
