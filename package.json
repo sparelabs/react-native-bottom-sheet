@@ -1,6 +1,6 @@
 {
   "name": "@sparelabs/bottom-sheet",
-  "version": "4.4.7",
+  "version": "4.4.8",
   "description": "Fork of @gorhom/bottom-sheet",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
